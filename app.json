@@ -2,6 +2,7 @@
   "expo": {
     "name": "shopify-app",
     "slug": "shopify-app",
+    "scheme": "shopifyclone",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -22,21 +23,23 @@
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
-    }
-    ,"plugins": [
+    },
+    "plugins": [
       [
         "expo-font",
         {
-          "fonts": ["./assets/fonts/Satoshi-Black.otf",
-        "./assets/fonts/Satoshi-BlackItalic.otf",
-        "./assets/fonts/Satoshi-Bold.otf",
-        "./assets/fonts/Satoshi-BoldItalic.otf",
-        "./assets/fonts/Satoshi-Italic.otf",
-        "./assets/fonts/Satoshi-Light.otf",
-        "./assets/fonts/Satoshi-Regular.otf"
-        ]
+          "fonts": [
+            "./assets/assets/fonts/Satoshi-Black.otf",
+            "./assets/fonts/Satoshi-BlackItalic.otf",
+            "./assets/fonts/Satoshi-Bold.otf",
+            "./assets/fonts/Satoshi-BoldItalic.otf",
+            "./assets/fonts/Satoshi-Italic.otf",
+            "./assets/fonts/Satoshi-Light.otf",
+            "./assets/fonts/Satoshi-Regular.otf"
+          ]
         }
-      ]
+      ],
+      "expo-router"
     ]
   }
 }
