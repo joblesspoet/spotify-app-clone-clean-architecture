@@ -4,9 +4,13 @@ import { ImageBackground, Text, View } from 'react-native'
 import ButtonPrimary from 'components/Buttons/ButtonPrimary'
 import ButtonChooseMode from 'components/Buttons/ButtonChooseMode'
 import { styles } from '@styles/home/choosemode'
+import { useRouter } from 'expo-router'
 
 const ChooseMode = () => {
+    const router = useRouter();
     const handleButtonClick = () => {
+
+        router.navigate('(auth)')
     }
 
     const handleButtonModeClick = (mode: string) => {
