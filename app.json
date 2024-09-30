@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.joblesspoet.spotifyclone"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.joblesspoet.spotifyclone"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
@@ -29,7 +31,7 @@
         "expo-font",
         {
           "fonts": [
-            "./assets/assets/fonts/Satoshi-Black.otf",
+            "./assets/fonts/Satoshi-Black.otf",
             "./assets/fonts/Satoshi-BlackItalic.otf",
             "./assets/fonts/Satoshi-Bold.otf",
             "./assets/fonts/Satoshi-BoldItalic.otf",
