@@ -1,24 +1,21 @@
 import React from 'react'
-import { TouchableOpacity } from 'react-native'
+import { Pressable, TouchableOpacity } from 'react-native'
 import BackButtonWrapper from './BackButtonWrapper'
-import Spacer from '@components/common/Spacer'
 import { useRouter } from 'expo-router'
 
 
 const BackButton = () => {
     const router = useRouter();
-    const handleBackAction = () => {        
-        if(router.canGoBack()) {
+    const handleBackAction = () => {   
+        if(router.canGoBack()){
             router.back()
         }
+        
     }
     return (
-        <React.Fragment>
-            <Spacer size={36} type='vertical' />
-            <TouchableOpacity onPress={handleBackAction}>
+            <Pressable style={{width:32, height:32}} onPress={handleBackAction}>
                 <BackButtonWrapper />
-            </TouchableOpacity>
-        </React.Fragment>
+            </Pressable>
     )
 }
 

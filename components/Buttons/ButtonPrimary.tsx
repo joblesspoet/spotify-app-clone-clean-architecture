@@ -17,11 +17,16 @@ const ButtonPrimary: React.FunctionComponent<ButtonPrimaryProps> = ({
   ...props
 }) => {
   return (
-    <TouchableOpacity onPress={(onButtonPress)} >
-      <View style={[styles.container, size === 'large' ? styles.containerLarge : styles.containerSmall]}>
-        <Text style={[styles.btnText, size === 'large' ? styles.btnLargeText : styles.btnSmallText]}>{title}</Text>
-      </View>
-    </TouchableOpacity>
+    <TouchableOpacity 
+  onPress={onButtonPress} 
+  style={[styles.container, size === 'large' ? styles.containerLarge : styles.containerSmall]} 
+  activeOpacity={0.7}
+>
+  <Text style={[styles.btnText, size === 'large' ? styles.btnLargeText : styles.btnSmallText]}>
+    {title}
+  </Text>
+</TouchableOpacity>
+
   );
 };
 

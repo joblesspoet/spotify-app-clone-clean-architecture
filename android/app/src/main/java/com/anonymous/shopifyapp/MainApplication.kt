@@ -1,4 +1,4 @@
-package com.joblesspoet.spotifyclone
+package com.anonymous.shopifyapp
 
 import android.app.Application
 import android.content.res.Configuration

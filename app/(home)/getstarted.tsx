@@ -9,7 +9,7 @@ const GetStarted = () => {
     const router = useRouter()
     const handleButtonClick = () => {
         console.log('button pressed.')
-         router.navigate('(home)/choosemode');
+         router.push('(home)/choosemode');
     }
     return (
         <ImageBackground style={styles.background} source={require("@assets/images/get_started_background.png")}  >

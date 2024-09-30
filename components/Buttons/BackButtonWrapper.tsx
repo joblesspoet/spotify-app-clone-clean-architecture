@@ -12,11 +12,9 @@ const BackButtonWrapper = () => {
 
 const styles = StyleSheet.create({
     container: {
-        marginLeft: 30,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#E8E8E8', 
-        
         width: 32, 
         height: 32, 
         borderRadius: 16

@@ -10,7 +10,7 @@ const ChooseMode = () => {
     const router = useRouter();
     const handleButtonClick = () => {
 
-        router.navigate('(auth)')
+        router.push('(auth)')
     }
 
     const handleButtonModeClick = (mode: string) => {

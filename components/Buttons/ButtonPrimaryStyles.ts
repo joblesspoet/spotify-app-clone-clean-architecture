@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
       borderRadius: 30,
       justifyContent: 'center',
       alignItems: 'center',
+      // borderWidth:1,
     },
     containerLarge: {
       width: 329,

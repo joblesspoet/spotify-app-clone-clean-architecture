@@ -21,7 +21,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.joblesspoet.spotifyclone"
+      "package": "com.anonymous.shopifyapp"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
