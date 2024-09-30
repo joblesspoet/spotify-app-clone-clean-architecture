@@ -1,5 +1,5 @@
 import React from 'react'
-import {ImageBackground, StyleSheet, Text, View } from 'react-native'
+import {ImageBackground, Platform, StyleSheet, Text, View } from 'react-native'
 import AppLogo from 'components/common/AppLogo'
 import ButtonPrimary from 'components/Buttons/ButtonPrimary'
 import { styles } from '@styles/home/getstarted'
@@ -14,7 +14,7 @@ const GetStarted = () => {
     return (
         <ImageBackground style={styles.background} source={require("@assets/images/get_started_background.png")}  >
             <View style={styles.container}>
-                <AppLogo width={196} height={59} style={{marginTop: 10}} />
+                <AppLogo width={196} height={59} style={{ marginTop: Platform.OS == 'android' ? 10: 35 }} />
                 <View style={styles.containerBottom}>
                     <Text style={styles.heading}>Enjoy Listening To Music</Text>
                     <View style={styles.subheadingContainer}>
