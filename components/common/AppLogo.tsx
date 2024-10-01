@@ -8,7 +8,11 @@ interface AppLogoProps extends SvgProps {
   height?: number;
 }
 
-const AppLogo: React.FC<AppLogoProps> = ({ width = 196, height = 196, ...props }) => {
+const AppLogo: React.FC<AppLogoProps> = ({
+  width = 196,
+  height = 196,
+  ...props
+}) => {
   return (
     <View style={styles.container}>
       <Logo width={width} height={height} {...props} />

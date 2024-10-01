@@ -1,15 +1,15 @@
 import { Stack } from 'expo-router';
 
 export default function HomeLayout() {
-    return (
-        <Stack
-            screenOptions={{
-                headerShown: false,
-            }}
-        >
-            <Stack.Screen name="index" />
-            <Stack.Screen name="getstarted"  />
-            <Stack.Screen name="choosemode" />
-        </Stack>
-    );
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen name="index" />
+      <Stack.Screen name="getstarted" />
+      <Stack.Screen name="choosemode" />
+    </Stack>
+  );
 }
