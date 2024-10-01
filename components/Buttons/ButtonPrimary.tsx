@@ -1,5 +1,10 @@
 import React, { memo } from 'react';
-import { Text, TouchableOpacity, TouchableOpacityProps, View } from 'react-native';
+import {
+  Text,
+  TouchableOpacity,
+  TouchableOpacityProps,
+  View,
+} from 'react-native';
 import { styles } from './ButtonPrimaryStyles';
 
 type ButtonSize = 'small' | 'large';
@@ -17,19 +22,24 @@ const ButtonPrimary: React.FunctionComponent<ButtonPrimaryProps> = ({
   ...props
 }) => {
   return (
-    <TouchableOpacity 
-  onPress={onButtonPress} 
-  style={[styles.container, size === 'large' ? styles.containerLarge : styles.containerSmall]} 
-  activeOpacity={0.7}
->
-  <Text style={[styles.btnText, size === 'large' ? styles.btnLargeText : styles.btnSmallText]}>
-    {title}
-  </Text>
-</TouchableOpacity>
-
+    <TouchableOpacity
+      onPress={onButtonPress}
+      style={[
+        styles.container,
+        size === 'large' ? styles.containerLarge : styles.containerSmall,
+      ]}
+      activeOpacity={0.7}
+    >
+      <Text
+        style={[
+          styles.btnText,
+          size === 'large' ? styles.btnLargeText : styles.btnSmallText,
+        ]}
+      >
+        {title}
+      </Text>
+    </TouchableOpacity>
   );
 };
-
-
 
 export default memo(ButtonPrimary);
