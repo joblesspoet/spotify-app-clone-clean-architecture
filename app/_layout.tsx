@@ -9,9 +9,8 @@ export default function RootLayout() {
   }
 
   return (
-    <Stack screenOptions={{ headerShown: false }}>
+    <Stack screenOptions={{ headerShown: false }} initialRouteName="(home)">
       <Stack.Screen name="(home)" />
-      <Stack.Screen name="(auth)" />
     </Stack>
   );
 }

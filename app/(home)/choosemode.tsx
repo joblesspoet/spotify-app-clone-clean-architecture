@@ -9,7 +9,7 @@ import { useRouter } from 'expo-router';
 const ChooseMode = () => {
   const router = useRouter();
   const handleButtonClick = () => {
-    router.push('(auth)');
+    router.navigate('(auth)');
   };
 
   const handleButtonModeClick = (mode: string) => {
